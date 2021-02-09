@@ -6,8 +6,17 @@ body {
     font-family: $bodyFont;
 }
 
+nav ul li a {
+    font-family: $displayFont;
+    font-size: 1.5rem;
+}
+
 h1 {
     font-family: $displayFont;
-    font-size: 12rem;
+    font-size: 15rem;
     line-height: .8;
+}
+
+i {
+    font-size: 3.5rem;
 }

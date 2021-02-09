@@ -235,6 +235,47 @@ html {
   overflow: hidden;
 }
 
+.mainWrapper {
+  max-width: 2000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main, nav {
+  background-color: #000;
+}
+
+video, img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul li {
+  margin-right: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #e6e6e6;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -243,10 +284,19 @@ body {
   font-family: "Mulish", sans-serif;
 }
 
+nav ul li a {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.5rem;
+}
+
 h1 {
   font-family: "Shrikhand", cursive;
-  font-size: 12rem;
+  font-size: 15rem;
   line-height: .8;
+}
+
+i {
+  font-size: 3.5rem;
 }
 
 header {
@@ -260,7 +310,7 @@ header #headerVideo {
 header h1 {
   color: #e6e6e6;
   position: absolute;
-  bottom: 30%;
+  bottom: 25%;
   left: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -273,8 +323,30 @@ header h1 {
 
 header h1 span {
   text-shadow: 5px 5px 10px #313131;
+  opacity: 0;
+  -webkit-transition: all 6s ease;
+  transition: all 6s ease;
 }
 
 header h1 .labSpan {
   padding-left: 75px;
+}
+
+.logoFade {
+  opacity: 1;
+}
+
+nav {
+  padding: 5px 0;
+  position: fixed;
+  width: 100%;
+}
+
+nav ul li {
+  padding: 15px 20px;
+}
+
+nav ul li:first-child {
+  padding: 0;
+  margin-right: 35px;
 }
