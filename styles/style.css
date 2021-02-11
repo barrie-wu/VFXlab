@@ -284,15 +284,28 @@ body {
   font-family: "Mulish", sans-serif;
 }
 
+h1, h2 {
+  font-family: "Shrikhand", cursive;
+}
+
 nav ul li a {
   font-family: "Shrikhand", cursive;
   font-size: 1.5rem;
 }
 
 h1 {
-  font-family: "Shrikhand", cursive;
   font-size: 15rem;
   line-height: .8;
+}
+
+h2 {
+  font-size: 6rem;
+}
+
+p {
+  font-size: 1.6rem;
+  letter-spacing: 1.2;
+  line-height: 1.5;
 }
 
 i {
@@ -324,8 +337,8 @@ header h1 {
 header h1 span {
   text-shadow: 5px 5px 10px #313131;
   opacity: 0;
-  -webkit-transition: all 6s ease;
-  transition: all 6s ease;
+  -webkit-transition: all 8s ease;
+  transition: all 8s ease;
 }
 
 header h1 .labSpan {
@@ -339,6 +352,7 @@ header h1 .labSpan {
 nav {
   padding: 5px 0;
   position: fixed;
+  z-index: 100;
   width: 100%;
 }
 
@@ -349,4 +363,82 @@ nav ul li {
 nav ul li:first-child {
   padding: 0;
   margin-right: 35px;
+}
+
+.about {
+  padding: 100px 0;
+  background-color: #e6e6e6;
+}
+
+.about .aboutImg {
+  max-width: 500px;
+  border-radius: 25% 50%;
+  margin-right: 50px;
+  -webkit-box-shadow: -10px 10px 15px #ff00b3;
+          box-shadow: -10px 10px 15px #ff00b3;
+  -webkit-animation: colorChange 7s infinite;
+          animation: colorChange 7s infinite;
+}
+
+.about .aboutText p {
+  margin: 25px auto;
+}
+
+@-webkit-keyframes colorChange {
+  0% {
+    -webkit-box-shadow: -10px 10px 15px #ff00b3;
+            box-shadow: -10px 10px 15px #ff00b3;
+  }
+  25% {
+    -webkit-box-shadow: -10px 10px 15px #e5ff00;
+            box-shadow: -10px 10px 15px #e5ff00;
+  }
+  50% {
+    -webkit-box-shadow: -10px 10px 15px #48ff00;
+            box-shadow: -10px 10px 15px #48ff00;
+  }
+  75% {
+    -webkit-box-shadow: -10px 10px 15px #00e1ff;
+            box-shadow: -10px 10px 15px #00e1ff;
+  }
+  100% {
+    -webkit-box-shadow: -10px 10px 15px #ff00b3;
+            box-shadow: -10px 10px 15px #ff00b3;
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    -webkit-box-shadow: -10px 10px 15px #ff00b3;
+            box-shadow: -10px 10px 15px #ff00b3;
+  }
+  25% {
+    -webkit-box-shadow: -10px 10px 15px #e5ff00;
+            box-shadow: -10px 10px 15px #e5ff00;
+  }
+  50% {
+    -webkit-box-shadow: -10px 10px 15px #48ff00;
+            box-shadow: -10px 10px 15px #48ff00;
+  }
+  75% {
+    -webkit-box-shadow: -10px 10px 15px #00e1ff;
+            box-shadow: -10px 10px 15px #00e1ff;
+  }
+  100% {
+    -webkit-box-shadow: -10px 10px 15px #ff00b3;
+            box-shadow: -10px 10px 15px #ff00b3;
+  }
+}
+
+.about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutSocials a {
+  color: #000;
 }

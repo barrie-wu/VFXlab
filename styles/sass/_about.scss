@@ -1,0 +1,35 @@
+.about {
+    padding: 100px 0;
+    background-color: $primaryFont;
+    .aboutImg {
+        max-width: 500px;
+        border-radius: 25% 50%;
+        margin-right: 50px;
+        box-shadow: -10px 10px 15px $neon1;
+        animation: colorChange 7s infinite;
+    }
+    .aboutText {
+        p {
+            margin: 25px auto;
+        }
+    }
+}
+
+@keyframes colorChange {
+    0% {box-shadow: -10px 10px 15px $neon1;}
+    25% {box-shadow: -10px 10px 15px $neon2;}
+    50% {box-shadow: -10px 10px 15px $neon3;}
+    75% {box-shadow: -10px 10px 15px $neon4;}
+    100% {box-shadow: -10px 10px 15px $neon1;}
+}
+
+.about .wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.aboutSocials {
+    a {
+        color: $primaryBG;
+    }
+}
