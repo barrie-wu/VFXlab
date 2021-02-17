@@ -24,7 +24,7 @@ const slideWidth = slides[0].getBoundingClientRect().width;
 
 // arrrange slides next to one another
 const setSlidePosition = (slide, i) => {
-    slide.style.left = slideWidth * i + 'px';
+    slide.style.left = (slideWidth + 25) * i + 'px';
 }
 slides.forEach(setSlidePosition)
 
@@ -44,7 +44,7 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
     if (targetIndex === 0) {
         prevButton.classList.add('isHidden');
         nextButton.classList.remove('isHidden')
-    } else if (targetIndex === slides.length - 1) {
+    } else if (targetIndex === slides.length - 2) {
         prevButton.classList.remove('isHidden');
         nextButton.classList.add('isHidden');
     } else {

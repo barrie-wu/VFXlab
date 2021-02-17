@@ -28,7 +28,19 @@
 }
 
 .aboutSocials {
+    li {
+        margin-right: 25px;
+        &:nth-child(1) a:hover {color: $neon1}
+        &:nth-child(2) a:hover {color: $neon2}
+        &:nth-child(3) a:hover {color: $neon3}
+        &:nth-child(4) a:hover {color: $neon4}
+        &:nth-child(1) a:active {color: $neon1}
+        &:nth-child(2) a:active {color: $neon2}
+        &:nth-child(3) a:active {color: $neon3}
+        &:nth-child(4) a:active {color: $neon4}
+    }
     a {
         color: $primaryBG;
+        transition: color .25s linear;
     }
 }

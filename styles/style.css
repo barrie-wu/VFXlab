@@ -443,8 +443,46 @@ nav ul li:first-child {
           align-items: center;
 }
 
+.aboutSocials li {
+  margin-right: 25px;
+}
+
+.aboutSocials li:nth-child(1) a:hover {
+  color: #ff00b3;
+}
+
+.aboutSocials li:nth-child(2) a:hover {
+  color: #e5ff00;
+}
+
+.aboutSocials li:nth-child(3) a:hover {
+  color: #48ff00;
+}
+
+.aboutSocials li:nth-child(4) a:hover {
+  color: #00e1ff;
+}
+
+.aboutSocials li:nth-child(1) a:active {
+  color: #ff00b3;
+}
+
+.aboutSocials li:nth-child(2) a:active {
+  color: #e5ff00;
+}
+
+.aboutSocials li:nth-child(3) a:active {
+  color: #48ff00;
+}
+
+.aboutSocials li:nth-child(4) a:active {
+  color: #00e1ff;
+}
+
 .aboutSocials a {
   color: #000;
+  -webkit-transition: color .25s linear;
+  transition: color .25s linear;
 }
 
 .gallery h2 {
@@ -455,7 +493,7 @@ nav ul li:first-child {
 .carousel {
   position: relative;
   height: 400px;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -481,12 +519,13 @@ nav ul li:first-child {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 100%;
+  width: 49%;
 }
 
 .carouselTrackContainer .carouselTrack .carouselSlide .carouselImg {
   width: 100%;
   height: 100%;
+  border-radius: 15px;
   -o-object-fit: cover;
      object-fit: cover;
 }
