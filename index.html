@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://kit.fontawesome.com/b98553b8ad.js" crossorigin="anonymous"></script>
-    <title>SFX Lab</title>
+    <title>VFX Lab</title>
 </head>
 <body>
     <header>
@@ -27,12 +28,12 @@
             <source src="assets/inkWater.mp4" type="video/mp4">
         </video>
         <h1>
-            <span class="sfxSpan">SFX</span>
+            <span class="vfxSpan">VFX</span>
             <span class="labSpan">Labs</span>
         </h1>
     </header>
     <main>
-        <section class="about">
+        <section class="aboutSection">
             <div class="wrapper">
                 <img class="aboutImg" src="./assets/aboutUs.jpg" alt="">
                 <div class="aboutText">
@@ -43,6 +44,41 @@
                         <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
                         <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
                     </ul>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="wrapper">
+                <h2>Our Work</h2>
+                <div class="carousel">
+                    <button class="carouselButton carouselButtonLeft isHidden"><i class="fas fa-chevron-circle-left"></i></button>
+                    <div class="carouselTrackContainer">
+                        <ul class="carouselTrack">
+                            <li class="carouselSlide currentSlide">
+                                <img class="carouselImg" src="./assets/galleryDragon.jpg" alt="">
+                            </li>
+                            <li class="carouselSlide">
+                                <img class="carouselImg" src="./assets/galleryFairyTale.jpg" alt="">
+                            </li>
+                            <li class="carouselSlide">
+                                <img class="carouselImg" src="./assets/galleryGirl.jpg" alt="">
+                            </li>
+                            <li class="carouselSlide">
+                                <img class="carouselImg" src="./assets/galleryMushroom.jpg" alt="">
+                            </li>
+                            <li class="carouselSlide">
+                                <img class="carouselImg" src="./assets/galleryUfo.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="carouselButton carouselButtonRight"><i class="fas fa-chevron-circle-right"></i></button>
+                    <div class="carouselNav">
+                        <button class="carouselIndicator currentSlide"></button>
+                        <button class="carouselIndicator"></button>
+                        <button class="carouselIndicator"></button>
+                        <button class="carouselIndicator"></button>
+                        <button class="carouselIndicator"></button>
+                    </div>
                 </div>
             </div>
         </section>

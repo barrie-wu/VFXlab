@@ -1,5 +1,4 @@
-.about {
-    padding: 100px 0;
+.aboutSection {
     background-color: $primaryFont;
     .aboutImg {
         max-width: 500px;
@@ -10,7 +9,7 @@
     }
     .aboutText {
         p {
-            margin: 25px auto;
+            margin-bottom: 25px;
         }
     }
 }
@@ -23,7 +22,7 @@
     100% {box-shadow: -10px 10px 15px $neon1;}
 }
 
-.about .wrapper {
+.aboutSection .wrapper {
     display: flex;
     align-items: center;
 }

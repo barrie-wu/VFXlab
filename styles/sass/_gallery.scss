@@ -1,0 +1,80 @@
+.gallery {
+    h2 {
+        color: $primaryFont;
+        text-align: center;
+    }
+}
+
+.carousel {
+    position: relative;
+    height: 400px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.carouselTrackContainer {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    .carouselTrack {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+        height: 100%;
+        transition: transform .3s ease-in;
+        .carouselSlide {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            .carouselImg {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.carouselButton {
+    cursor: pointer;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.carouselButtonLeft {
+    left: -50px;
+}
+
+.carouselButtonRight {
+    right: -50px;
+}
+
+.carouselNav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    .carouselIndicator {
+        cursor: pointer;
+        border: 0;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background: rgba(255, 255, 255, 0.5);
+        margin: 0 10px;
+        &.currentSlide {
+            background: white;
+        }
+    }
+}
+
+.isHidden {
+    display: none;
+}
+
