@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-main, nav {
+main, .headerNav {
     background-color: $primaryBG;
 }
 
@@ -25,4 +25,22 @@ ul {
 
 section {
     padding: 100px 0;
+}
+
+.boxShadow {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 98% 96%, 98% 4%, 2% 4%);
+    width: 500px;
+    height: 280px;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.boxShadowTop {
+    right: 5%;
+    top: 8%;
+}
+.boxShadowBottom {
+    left: 5%;
+    bottom: 8%;
+    transform: rotate(180deg);
 }

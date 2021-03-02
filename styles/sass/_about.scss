@@ -1,5 +1,9 @@
 .aboutSection {
     background-color: $primaryFont;
+    position: relative;
+    .aboutBoxShadow {
+        background: $neon1;
+    }
     .aboutImg {
         max-width: 500px;
         border-radius: 25% 50%;
@@ -16,9 +20,8 @@
 
 @keyframes colorChange {
     0% {box-shadow: -10px 10px 15px $neon1;}
-    25% {box-shadow: -10px 10px 15px $neon2;}
-    50% {box-shadow: -10px 10px 15px $neon3;}
-    75% {box-shadow: -10px 10px 15px $neon4;}
+    33% {box-shadow: -10px 10px 15px $neon2;}
+    66% {box-shadow: -10px 10px 15px $neon3;}
     100% {box-shadow: -10px 10px 15px $neon1;}
 }
 
@@ -27,17 +30,17 @@
     align-items: center;
 }
 
-.aboutSocials {
+.socials {
     li {
         margin-right: 25px;
-        &:nth-child(1) a:hover {color: $neon1}
-        &:nth-child(2) a:hover {color: $neon2}
-        &:nth-child(3) a:hover {color: $neon3}
-        &:nth-child(4) a:hover {color: $neon4}
-        &:nth-child(1) a:active {color: $neon1}
-        &:nth-child(2) a:active {color: $neon2}
-        &:nth-child(3) a:active {color: $neon3}
-        &:nth-child(4) a:active {color: $neon4}
+        &:nth-child(1) a:hover {color: $instagram}
+        &:nth-child(2) a:hover {color: $twitter}
+        &:nth-child(3) a:hover {color: $facebook}
+        &:nth-child(4) a:hover {color: $vimeo}
+        &:nth-child(1) a:active {color: $instagram}
+        &:nth-child(2) a:active {color: $twitter}
+        &:nth-child(3) a:active {color: $facebook}
+        &:nth-child(4) a:active {color: $vimeo}
     }
     a {
         color: $primaryBG;

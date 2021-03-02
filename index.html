@@ -13,14 +13,14 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="headerNav">
             <div class="wrapper">
                 <ul>
                     <li><a href="#"><i class="fas fa-soap"></i></a></li>
                     <li><a href="#">home</a></li>
                     <li><a href="#">about</a></li>
                     <li><a href="#">work</a></li>
-                    <li><a href="#">contact us</a></li>
+                    <li><a href="#">contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -34,6 +34,8 @@
     </header>
     <main>
         <section class="aboutSection">
+            <div class="boxShadow aboutBoxShadow boxShadowTop"></div>
+            <div class="boxShadow aboutBoxShadow boxShadowBottom"></div>
             <div class="wrapper">
                 <img class="aboutImg" src="./assets/aboutUs.jpg" alt="">
                 <div class="aboutText">
@@ -50,6 +52,8 @@
             </div>
         </section>
         <section class="gallery">
+            <div class="boxShadow galleryBoxShadow boxShadowTop"></div>
+            <div class="boxShadow galleryBoxShadow boxShadowBottom"></div>
             <div class="wrapper">
                 <h2>Our Work</h2>
                 <div class="carousel">
@@ -84,6 +88,32 @@
                         <button class="carouselIndicator"></button>
                         <button class="carouselIndicator"></button>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="wrapper">
+                <a href="#"><i class="logo fas fa-soap"></i></a>
+                <div class="contactFlexContainer">
+                    <nav>
+                        <ul class="contactNav">
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">work</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="socials contactSocials">
+                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-vimeo"></i></a></li>
+                    </ul>
+                    <form action="">
+                        <label for="email">Sign up for our weekly newsletter!</label>
+                        <input type="text" id="email" placeholder="email@email.com">
+                        <input type="submit" value="submit">
+                    </form>
                 </div>
             </div>
         </section>

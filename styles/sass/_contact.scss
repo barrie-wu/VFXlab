@@ -1,0 +1,20 @@
+.contact {
+    background: $primaryFont;
+    .logo {
+        color: $primaryBG;
+        font-size: 6rem;
+        margin-bottom: 25px;
+    }
+}
+
+.contactNav {
+    flex-direction: column;
+    li a {
+        color: black;
+    }
+}
+
+.contactFlexContainer {
+    display: flex;
+    justify-content: space-between;
+}
